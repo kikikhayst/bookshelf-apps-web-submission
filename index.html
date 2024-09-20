@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+
+    <main>
+        <div class="search_container">
+            <section class="search_section">
+                <form id="searchBook">
+                    <input id="searchBookTitle" type="text" placeholder="Cari Judul">
+                    <button id="searchSubmit" type="click">Cari</button>
+                </form>
+            </section>
+
+            <section class="about_me">
+                <div class="about_me_header">
+                    <h2>Profil</h2>
+                </div>
+                <div class="sub_about_me">
+                    <img src="assets/img/profil.jpg" alt="Rizqi Rama Hayustya">
+                    <p class="sub_about_me_name">Rizqi Rama Hayustya</p>
+                    <p class="sub_about_me_content"><i class="fas icon-red">&#xf3c5;</i> Kabupaten Sukoharjo, Jawa
+                        Tengah
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="input_bookshelf_container">
+            <h2>Masukkan Buku Baru</h2>
+            <p>Bagian bertanda * harus diisi.</p>
+
+            <section class="input_section">
+                <form id="inputBook">
+                    <div class="input">
+                        <label for="inputBookTitle">Judul*</label>
+                        <input id="inputBookTitle" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookAuthor">Penulis*</label>
+                        <input id="inputBookAuthor" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookYear">Tahun*</label>
+                        <input id="inputBookYear" type="number" required>
+                    </div>
+                    <div class="input_inline">
+                        <label for="inputBookIsComplete">Selesai dibaca</label>
+                        <input id="inputBookIsComplete" type="checkbox">
+                    </div>
+                    <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai
+                            dibaca</span></button>
+                </form>
+            </section>
+
+            <h2>Rak Buku Saya</h2>
+
+            <div class="bookshelf">
+                <section class="book_shelf unread">
+                    <h2>Belum selesai dibaca</h2>
+                    <div id="incompleteBookshelfList" class="book_list">
+                    </div>
+                </section>
+
+                <section class="book_shelf done_read">
+                    <h2>Selesai dibaca</h2>
+                    <div id="completeBookshelfList" class="book_list">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="about_mobile">
+            <section class="about_me">
+                <div class="about_me_header">
+                    <h2>Profil</h2>
+                </div>
+                <div class="sub_about_me">
+                    <img src="assets/img/profil.jpg" alt="Rizqi Rama Hayustya">
+                    <p class="sub_about_me_name">Rizqi Rama Hayustya</p>
+                    <p class="sub_about_me_content"><i class="fas icon-red">&#xf3c5;</i> Kabupaten Sukoharjo, Jawa
+                        Tengah
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Dibuat dari Kabupaten Sukoharjo ter-<span class="icon-red">&#10084;</span></p>
+    </footer>
+
+    <script src="assets/scripts/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
